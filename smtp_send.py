@@ -29,7 +29,6 @@ class smtpsend:
 
     def p_read(self, tn):
         time.sleep(0.1)
-        print(tn.read_very_eager().decode('ascii'))
 
     def mailtext_send(self, sender=None, to=None, subject=None, body=None):
         if sender is None:
