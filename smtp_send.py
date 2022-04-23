@@ -61,9 +61,9 @@ class smtpsend:
         a = tn.read_very_eager().decode('ascii')
         print(a)
         if a.startswith('250'):
-            self.返回值 = '邮件发送成功'
+            self.返回值 = 1    # 邮件发送成功
         else:
-            self.返回值 = '邮件发送失败'
+            self.返回值 = 0    # 邮件发送失败
         tn.write(b"QUIT\n")
         self.p_read(tn)
         tn.close()
