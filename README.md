@@ -23,9 +23,9 @@
 
 作为模块使用
 
-    import smtp_send
-    aa = smtp_send.smtpsend(host=邮件服务器地址, port=端口, account=账号, password=密码)
-    aa.mailtext_send(sender=发件人地址, to=收件人地址, subject=标题, body=正文)
+    >>>import smtp_send
+    >>>a1 = smtp_send.smtpsend(host=邮件服务器地址, port=端口, account=账号, password=密码)
+    >>>a1.mailtext_send(sender=发件人地址, to=收件人地址, subject=标题, body=正文)
 
 
 ----
